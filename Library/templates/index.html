@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    {% with firstname="Muhammad Ali" %}
+        <h1>Hello {{ firstname }}, how are you?</h1>
+    {% endwith %}
+    {% if greeting == 1 %}
+        <h1>Hello Welcome to Selection</h1>
+    {% else %}
+        <h1>My course is DCS</h1> 
+    {% endif %}
+
+</body>
+    <button><a href="{% url 'view' %}">VIEW</button><br>
+    <button><a href="{% url 'database' %}">DATABASE</button>
+    <button><a href="{% url 'course' %}">INSERT COURSE</button>
+    <button><a href="{% url 'mentor' %}">NEW MENTOR</button>
+    <button><a href="{% url 'search_course' %}">SEARCH COURSE</button>
+    <button><a href="{% url 'search_mentor' %}">SEARCH MENTOR</button>
+    
+</body>
+</html>
